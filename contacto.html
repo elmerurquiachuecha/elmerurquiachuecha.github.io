@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi sitio web personal, </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_form.css">
+    <link rel="shortcut icon" href="media/logo.ico">
+</head>
+<body>
+    
+    <div class="container p-2 ps-5 rounded-5 centrar">
+        <header class="row p-2 ">
+            <div class="col-12 col-lg-3 logo mw-100 ">
+              <a href="index.html""><img src="media/logo.png" alt="logo"></a>
+            </div>
+            <div class="col-12 col-lg-6 mb-3 mw-100 navegacion">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="index.html">Sobre mi</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="family.html">Familia</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="amigos.html">Amigos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="estudios.html">Estudios</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link activado" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-3 mb-0 iconos_pers ">
+              <a target="_blank" href="https://www.google.com/maps/place/Pje.+1+d35,+Lima+15306/@-11.9718453,-77.0769469,17.46z/data=!4m5!3m4!1s0x9105ce3e5cd60f15:0x5be063e2daaaee03!8m2!3d-11.971796!4d-77.0772879"><img src="media/ubi.png" class="tamaño" alt="logo"></a>
+              <a target="_blank" href="tel:+51942134738"><img src="media/fono.png" class="tamaño" alt="logo"></a>
+              <a target="_blank" href="mailto:urquiachuechaelmer@gmail.com"><img src="media/gmail.png" class="tamaño" alt="logo"></a>
+            </div>  
+        </header>
+        <main class="row">
+            <article class="col-12 col-lg-11 mb-4 justify-content-center">
+              <form class="form3">
+                <fieldset class="nombres">
+                    <legend>Contactar</legend>
+                    Nombres y Apellidos:
+                    <br> 
+                        <input type="text" name="xnombreyapell" placeholder="Elmer Urquia Chuecha">
+                    <br>
+                    <br>          
+                    Telefono:
+                    <br> 
+                        <input type="tel" id="telef" name="xtel" maxlength="11" placeholder="942134759" pattern="[0-9]{9}" required />
+                    <br>  
+                    <br>              
+                    Email:
+                    <br> 
+                        <input type="email" name="xcorreo"/>
+                    <br> 
+                    <br> 
+                    Enviar Mensaje:
+                    <br> 
+                        <textarea id="mensaje" name="mensaje"
+                        rows="1" cols="36" placeholder="Escribe el mensaje..."></textarea>
+                    <br> 
+                    <br> 
+                    <p>Estoy de acuerdo con los <a href="#">Terminos y Condiciones</a> </p>
+                </fieldset>
+                <input type="submit" name="bt1" onclick="valida(xnombreyapell.value, xtel.value, mensaje.value, xcorreo.value)" value="Contactar" class="input">
+              </form>
+            </article>
+            <div class="col-12 col-lg-1 ">
+              <div class="col-12 redes w-100"" >
+                <a target="_blank" href="https://www.facebook.com/elmer.urquia.chuecha/"><img src="media/fb.png" class="tamaño ico_p" alt="logo"></a>
+                <a target="_blank" href="https://www.instagram.com/elmer_bahir09/"><img src="media/ist.png" class="tamaño ico_p " alt="logo"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/elmeruch04/"><img src="media/ln.png" class="tamaño ico_p" alt="logo"></a>
+                <a target="_blank" href="https://open.spotify.com/"><img src="media/spt.png" class="tamaño ico_p" alt="logo"></a>
+              </div>
+            </div>
+        </main>
+        <footer class="row">
+            <div class="justify-content-center enlaces mb-2 col-12">
+                <a href="#" class="d-flex p-2 deco top p">Términos de Uso</a>
+                <a href="#" class="d-flex p-2 deco top p">Política de privacidad</a>
+                <a href="#" class="d-flex p-2 deco top p">Politica de reembolso</a>
+                <a href="#" class="d-flex p-2 deco top p">Sistema de cobranza</a>
+                <a href="#" class="d-flex p-2 deco top p">Sistema de boletos</a>
+            </div>
+            <div class="justify-content-center col-12">
+                <p class="foot">2022 - Elmer Urquia Chuecha &copy; Todos los Derechos Reservados </p>
+            </div>
+        </footer>
+
+
+    </div>
+
+ 
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script1.js"></script>
+    
+</body>
+</html>

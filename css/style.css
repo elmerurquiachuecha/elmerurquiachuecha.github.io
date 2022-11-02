@@ -1,0 +1,96 @@
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    background: #F3904F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3B4371, #F3904F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3B4371, #F3904F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+ h1, p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+a, h4 {
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+.container {
+    background-color: #262626;
+    box-shadow: 7px 13px 37px #000;
+}
+h1 {
+    color: #fe6301;
+}
+.activado {
+    color: #fe6301;
+    border-bottom: 2px solid rgb(245, 120, 37);
+}
+.enlaces {
+    display: flex;
+    
+    
+}
+p {
+    color: antiquewhite;
+    
+}
+h4 {
+    color: rgb(108, 199, 56);
+    font-weight: 800;
+    
+}
+
+h5 {
+    color: rgb(240, 136, 235);
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-weight: 800;
+}
+
+.top {
+    text-decoration: none;
+    color: #fe6301;
+    border-top: 2px solid rgb(245, 120, 37);
+}
+.logo {
+    text-align: center;
+}
+.tamaño {
+    width: 32px;
+}
+.foot {
+    text-align: center;
+    color: #79e416;
+}
+
+.iconos_pers {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media (min-width: 993px) { 
+    .redes {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+}
+
+.redes {
+  display: flex;
+  justify-content: space-evenly;
+  }
+.ico_p{
+  padding-bottom: 15px;
+}
+.nombre {
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.deco:hover {
+    color: #f1c8af;
+}
+
+/* ----------Family--------------------- */
+.imag {
+    width: 80%;
+}
